@@ -2,7 +2,7 @@
 Menjelaskan bagaimana eksekusi bubble sort python pada MPI Cluster melalui Ubuntu Desktop.
 
 # Topologi MPI Cluster
-!![topologi](https://github.com/ZahraMaharaniP/Bubble-Sort-Python-Menggunakan-MPI/assets/149281915/500a6921-3860-4b6b-8cb3-94caf1d5fb21)
+![topologi](https://github.com/ZahraMaharaniP/Bubble-Sort-Python-Menggunakan-MPI/assets/149281915/500a6921-3860-4b6b-8cb3-94caf1d5fb21)
 
 # Persiapan
 - Siapkan beberapa komputer, tentukan mana yang menjadi master dan menjadi worker. 
