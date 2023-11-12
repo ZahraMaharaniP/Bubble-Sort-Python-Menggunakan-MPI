@@ -10,17 +10,12 @@ Menjelaskan bagaimana eksekusi bubble sort python pada MPI Cluster melalui Ubunt
 - Lakukan update dan upgrade dengan **sudo apt update && sudo apt upgrade**
 
 # 1. Konfigurasi File
-Buka file **/etc/hosts** dengan perintah sudo nano /etc/hosts. Tambahkan beberapa IP dan aliasnya dari masing-masing komputer. 
-
-1.1 Master
-![image](https://github.com/ZahraMaharaniP/Bubble-Sort-Python-Menggunakan-MPI/assets/149281915/b8c12b06-1468-4d9c-a6bd-80ecb458d10d)
+Buka file "/etc/hosts" dengan perintah sudo nano /etc/hosts. Tambahkan beberapa IP dan aliasnya dari masing-masing komputer. 
+##1.1 Master ![image](https://github.com/ZahraMaharaniP/Bubble-Sort-Python-Menggunakan-MPI/assets/149281915/b8c12b06-1468-4d9c-a6bd-80ecb458d10d)
 
 1.2 Worker
 Tambahkan IP master dan IP komputer itu sendiri.
+-Worker1 ![image](https://github.com/ZahraMaharaniP/Bubble-Sort-Python-Menggunakan-MPI/assets/149281915/9176c1f8-c8b5-4483-bf4f-2ba9fa834cf9)
 
--Worker1
-![image](https://github.com/ZahraMaharaniP/Bubble-Sort-Python-Menggunakan-MPI/assets/149281915/9176c1f8-c8b5-4483-bf4f-2ba9fa834cf9)
-
--Worker2
-![image](https://github.com/ZahraMaharaniP/Bubble-Sort-Python-Menggunakan-MPI/assets/149281915/ba8d99ba-2506-41ee-b18a-abd87161360b)
+-Worker2 ![image](https://github.com/ZahraMaharaniP/Bubble-Sort-Python-Menggunakan-MPI/assets/149281915/ba8d99ba-2506-41ee-b18a-abd87161360b)
 
