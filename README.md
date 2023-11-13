@@ -7,11 +7,11 @@ Menjelaskan bagaimana eksekusi bubble sort python pada MPI Cluster melalui Ubunt
 # Persiapan MPI Cluster
 - Siapkan beberapa komputer, tentukan mana yang menjadi master dan menjadi worker. 
 - Pastikan seluruh komputer terhubung dalam satu jaringan yang sama.
-- Lakukan update dan upgrade dengan 'sudo apt update && sudo apt upgrade'
+- Lakukan update dan upgrade dengan `sudo apt update && sudo apt upgrade`
 
 ## 1. Konfigurasi File
 ## 1.1 Master 
-Buka file "/etc/hosts" dengan perintah sudo nano /etc/hosts. Tambahkan beberapa IP dan aliasnya dari masing-masing komputer.
+Buka file `/etc/hosts` dengan perintah `sudo nano /etc/hosts`. Tambahkan beberapa IP dan aliasnya dari masing-masing komputer.
 ![image](https://github.com/ZahraMaharaniP/Bubble-Sort-Python-Menggunakan-MPI/assets/149281915/b8c12b06-1468-4d9c-a6bd-80ecb458d10d)
 
 ## 1.2 Worker
@@ -56,7 +56,7 @@ Key public perlu disalin ke masing-masing worker dan disimpan ke dalam file auth
 ### 3.5 Lakukan Pengecekan File
 >*Lakukan di **Worker***
 
-Jika Key public berhasil dibuat, file authorized_keys akan muncul pada setiap worker di direktori ~/.ssh .
+Jika Key public berhasil dibuat, file authorized_keys akan muncul pada setiap worker di direktori `~/.ssh` .
 
 ![image](https://github.com/ZahraMaharaniP/Bubble-Sort-Python-Menggunakan-MPI/assets/149281915/c265ec7e-7229-40ca-9510-0d0a02ec03f8)
 
@@ -64,7 +64,7 @@ Jika Key public berhasil dibuat, file authorized_keys akan muncul pada setiap wo
 ### 4.1 Buat Shared Folder
 >*Lakukan di **Master** dan **Worker***
 
-Buat folder dengan nama bebas, misalnya voldemort dengan perintah mkdir voldemort. Disarankan untuk meletakkannya di  direktori ~/ atau ~/Desktop. Lalu lakukan perintah pwd untuk mengetahui lokasi direktori Voldemort.
+Buat folder dengan nama bebas, misalnya voldemort dengan perintah mkdir voldemort. Disarankan untuk meletakkannya di  direktori `~/` atau `~/Desktop`. Lalu lakukan perintah pwd untuk mengetahui lokasi direktori Voldemort.
 
 ![image](https://github.com/ZahraMaharaniP/Bubble-Sort-Python-Menggunakan-MPI/assets/149281915/64c18995-e336-4256-a28d-04014771d524)
 ### 4.2 Install NFS Server
@@ -72,7 +72,7 @@ Buat folder dengan nama bebas, misalnya voldemort dengan perintah mkdir voldemor
 
 ![image](https://github.com/ZahraMaharaniP/Bubble-Sort-Python-Menggunakan-MPI/assets/149281915/4ccd43db-a7c5-4ecc-ab63-aa86c158952d)
 
-Buka file /etc/exports dengan perintah sudo nano /etc/exports
+Buka file /etc/exports dengan perintah `sudo nano /etc/exports`
 Tambahkan baris berikut.
 <shared folder> *(rw,no_root_squash,no_subtree_check)
 Misalnya : 
@@ -91,7 +91,7 @@ Selanjutnya lakukan perintah berikut.
 
 ![image](https://github.com/ZahraMaharaniP/Bubble-Sort-Python-Menggunakan-MPI/assets/149281915/06a1b351-1b08-4d89-9c26-e5502d4e0af7)
 
-Lakukan pembuatan file/folder di shared folder di salah satu komputer. File/foldere tersebut seharusnya akan muncul di masing-masing komputer di folder yang sama.
+Lakukan pembuatan file/folder di shared folder di salah satu komputer. File/folder tersebut seharusnya akan muncul di masing-masing komputer di folder yang sama.
 
 ## 5. MPI
 ### 5.1 Install MPI
@@ -110,7 +110,7 @@ Install mpi4py
 ### 5.3 Testing MPI
 >*Lakukan di **Master***
 
-Buat dan edit file myfile.py di shared folder (Voldemort) dengan perintah sudo nano ~/Voldemort/myfile.py
+Buat dan edit file myfile.py di shared folder (Voldemort) dengan perintah `sudo nano ~/Voldemort/myfile.py`
 
 ![image](https://github.com/ZahraMaharaniP/Bubble-Sort-Python-Menggunakan-MPI/assets/149281915/9cf78b76-7f2b-4678-a11f-72f4104596c1)
 
